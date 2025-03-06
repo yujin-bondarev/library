@@ -1,0 +1,6 @@
+com\example\controllers\BookTrackerController.class
+com\example\repository\BookTrackerRepository.class
+com\example\service\BookTrackerService.class
+com\example\App.class
+com\example\config\KafkaConfig.class
+com\example\model\BookTracker.class

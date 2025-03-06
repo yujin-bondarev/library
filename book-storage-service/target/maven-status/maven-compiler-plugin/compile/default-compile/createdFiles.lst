@@ -1,0 +1,6 @@
+com\example\controllers\BookController.class
+com\example\repository\BookRepository.class
+com\example\service\BookService.class
+com\example\App.class
+com\example\model\Book.class
+com\example\config\KafkaConfig.class
