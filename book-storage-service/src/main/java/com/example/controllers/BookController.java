@@ -21,13 +21,13 @@ public class BookController {
         return ResponseEntity.ok(createdBook);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public ResponseEntity<Book> getBook(@PathVariable Long id) {
         Book book = bookService.getBook(id);
         return ResponseEntity.ok(book);
     }
 
-    @GetMapping("/{isbn}")
+    @GetMapping("/isbn/{isbn}")
     public ResponseEntity<Book> getBookByISBN(@PathVariable String isbn) {
         Book book = bookService.getBookByISBN(isbn);
         return ResponseEntity.ok(book);

@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/library/book-tracking")
+@RequestMapping("/library/tracking")
 public class BookTrackerController {
 
     @Autowired
     private BookTrackerService bookTrackerService;
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public ResponseEntity<BookTracker> getTracker(@PathVariable Long id) {
         BookTracker tracker = bookTrackerService.getTracker(id);
         return ResponseEntity.ok(tracker);
@@ -27,7 +27,7 @@ public class BookTrackerController {
         return ResponseEntity.ok(updatedTracker);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<BookTracker>> getAllTrackers() {
         List<BookTracker> trackers = bookTrackerService.getAllTrackers();
         return ResponseEntity.ok(trackers);
