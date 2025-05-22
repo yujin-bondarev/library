@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.exceptions.BookTrackerNotFoundException;
 import com.example.model.BookTracker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -44,15 +45,14 @@ public class BookTrackerService {
     }
 
     public BookTracker getTracker(Long id) {
-        Optional<BookTracker> tracker = bookTrackerRepository.findById(id);
-        return tracker.orElse(null);
+        return bookTrackerRepository.findById(id)
+            .orElseThrow(()->new BookTrackerNotFoundException("отслеживание книги с id " + id + "не найдено"));
     }
 
     public BookTracker updateTracker(Long id, BookTracker trackerDetails) {
         BookTracker tracker = getTracker(id);
         if (tracker != null) {
             tracker.setStatus(trackerDetails.getStatus());
-            tracker.setBookId(trackerDetails.getBookId());
             return bookTrackerRepository.save(tracker);
         }
         return null;

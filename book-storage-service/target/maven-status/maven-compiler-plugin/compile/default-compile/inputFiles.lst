@@ -2,5 +2,7 @@ F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\ja
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\repository\BookRepository.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\App.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\config\KafkaConfig.java
+F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\exceptions\BookNotFoundException.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\model\Book.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\service\BookService.java
+F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\exceptions\GlobalExceptionHandler.java

@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.exceptions.BookNotFoundException;
 import com.example.model.Book;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,8 +40,8 @@ public class BookService {
     }
 
     public Book getBook(Long id) {
-        Optional<Book> book = bookRepository.findById(id);
-        return book.orElse(null);
+        return bookRepository.findById(id)
+                .orElseThrow(() -> new BookNotFoundException("Книга с id " + id + " не найдена"));
     }
 
     public List<Book> getAllBooks() {
@@ -48,7 +49,11 @@ public class BookService {
     }
 
     public Book getBookByISBN(String isbn) {
-        return bookRepository.findByIsbn(isbn);
+        Book book = bookRepository.findByIsbn(isbn);
+        if (book == null) {
+            throw new BookNotFoundException("Книга с ISBN " + isbn + " не найдена");
+        }
+        return book;
     }
 
     public Book updateBook(Long id, Book bookDetails) {
