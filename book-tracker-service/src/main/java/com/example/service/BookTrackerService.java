@@ -46,7 +46,7 @@ public class BookTrackerService {
 
     public BookTracker getTracker(Long id) {
         return bookTrackerRepository.findById(id)
-            .orElseThrow(()->new BookTrackerNotFoundException("отслеживание книги с id " + id + "не найдено"));
+            .orElseThrow(()->new BookTrackerNotFoundException("отслеживание книги с id " + id + " не найдено"));
     }
 
     public BookTracker updateTracker(Long id, BookTracker trackerDetails) {

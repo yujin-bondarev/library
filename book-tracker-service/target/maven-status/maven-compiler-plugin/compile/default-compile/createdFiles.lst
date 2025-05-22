@@ -5,3 +5,4 @@ com\example\service\BookTrackerService.class
 com\example\App.class
 com\example\config\KafkaConfig.class
 com\example\model\BookTracker.class
+com\example\exceptions\GlobalExceptionHandler.class
