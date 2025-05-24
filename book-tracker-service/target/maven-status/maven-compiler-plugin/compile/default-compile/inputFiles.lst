@@ -1,8 +1,10 @@
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\exceptions\GlobalExceptionHandler.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\model\BookTracker.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\exceptions\BookTrackerNotFoundException.java
+F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\security\JwtAuthFilter.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\controllers\BookTrackerController.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\repository\BookTrackerRepository.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\service\BookTrackerService.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\App.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\config\KafkaConfig.java
+F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\config\SecurityConfig.java

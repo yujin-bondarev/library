@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>com.example.App</start-class>
         <java.version>1.8</java.version>
-        <lombok.version>1.14.8</lombok.version>
+        <lombok.version>1.18.28</lombok.version>
         <log4jdbc.log4j2.version>1.16</log4jdbc.log4j2.version>
         <rest.assured.version>2.3.3</rest.assured.version>
         <jjwt.version>0.9.1</jjwt.version>
@@ -53,7 +53,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
         </dependency>
         <!-- Тесты -->
         <dependency>
