@@ -5,6 +5,7 @@ import io.jsonwebtoken.Jwts;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.springframework.beans.factory.annotation.Value;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -14,7 +15,13 @@ import java.io.IOException;
 import java.util.Collections;
 
 public class JwtAuthFilter extends OncePerRequestFilter {
-    private static final String SECRET = "your-very-secret-key"; // тот же, что в auth-service
+
+    private final String secret;
+
+    // Через конструктор — лучший и универсальный вариант
+    public JwtAuthFilter(@Value("${jwt.secret}") String secret) {
+        this.secret = secret;
+    }
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
@@ -24,7 +31,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
             String token = header.substring(7);
             try {
                 Claims claims = Jwts.parserBuilder()
-                        .setSigningKey(SECRET.getBytes())
+                        .setSigningKey(secret.getBytes())
                         .build()
                         .parseClaimsJws(token)
                         .getBody();
