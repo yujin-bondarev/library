@@ -1,5 +1,3 @@
 com\example\config\SecurityConfig.class
-com\example\controllers\OAuthController.class
 com\example\App.class
 com\example\config\CustomOAuth2SuccessHandler.class
-com\example\services\AuthService.class

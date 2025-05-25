@@ -57,6 +57,10 @@ public class Book {
         return this.isDeleted = isDeleted;
     }
 
+    public boolean getIsDeleted() {
+        return this.isDeleted;
+    }
+
     public Long getId() {
         return id;
     }
