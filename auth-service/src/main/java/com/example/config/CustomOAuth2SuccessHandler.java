@@ -2,6 +2,7 @@ package com.example.config;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
@@ -38,7 +39,7 @@ public class CustomOAuth2SuccessHandler implements AuthenticationSuccessHandler 
                 .claim("authorities", authorities)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(System.currentTimeMillis() + 86400000)) // 1 день
-                .signWith(SignatureAlgorithm.HS256, secret.getBytes())
+                .signWith(Keys.hmacShaKeyFor(secret.getBytes()), SignatureAlgorithm.HS256)
                 .compact();
 
         response.setContentType("application/json");

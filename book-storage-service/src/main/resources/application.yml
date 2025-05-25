@@ -20,7 +20,7 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 custom:
   jwt:
-    secret: your_jwt_secret_here
+    secret: ${JWT_SECRET}
 logging:
   level:
     com.example.security: DEBUG
