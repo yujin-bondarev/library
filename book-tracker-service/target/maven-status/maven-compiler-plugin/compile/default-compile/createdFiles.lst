@@ -1,10 +1,11 @@
-com\example\controllers\BookTrackerController.class
-com\example\repository\BookTrackerRepository.class
 com\example\exceptions\BookTrackerNotFoundException.class
 com\example\service\BookTrackerService.class
-com\example\App.class
 com\example\config\SecurityConfig.class
+com\example\exceptions\GlobalExceptionHandler.class
+com\example\controllers\BookTrackerController.class
+com\example\repository\BookTrackerRepository.class
+com\example\App.class
+com\example\config\SwaggerConfig.class
 com\example\config\KafkaConfig.class
 com\example\model\BookTracker.class
-com\example\exceptions\GlobalExceptionHandler.class
 com\example\security\JwtAuthFilter.class

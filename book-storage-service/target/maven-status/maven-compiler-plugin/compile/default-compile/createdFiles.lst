@@ -1,10 +1,11 @@
 com\example\controllers\BookController.class
 com\example\exceptions\BookNotFoundException.class
+com\example\config\SecurityConfig.class
+com\example\exceptions\GlobalExceptionHandler.class
 com\example\repository\BookRepository.class
 com\example\service\BookService.class
 com\example\App.class
+com\example\config\SwaggerConfig.class
 com\example\model\Book.class
-com\example\config\SecurityConfig.class
 com\example\config\KafkaConfig.class
-com\example\exceptions\GlobalExceptionHandler.class
 com\example\security\JwtAuthFilter.class

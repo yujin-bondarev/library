@@ -3,6 +3,7 @@ F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\ja
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\App.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\security\JwtAuthFilter.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\config\KafkaConfig.java
+F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\config\SwaggerConfig.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\exceptions\BookNotFoundException.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\config\SecurityConfig.java
 F:\Projects\Стажировка\MODSEN\library\book-storage-service\src\main\java\com\example\model\Book.java

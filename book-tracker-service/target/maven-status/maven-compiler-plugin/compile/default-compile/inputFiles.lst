@@ -2,6 +2,7 @@ F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\ja
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\model\BookTracker.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\exceptions\BookTrackerNotFoundException.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\security\JwtAuthFilter.java
+F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\config\SwaggerConfig.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\controllers\BookTrackerController.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\repository\BookTrackerRepository.java
 F:\Projects\Стажировка\MODSEN\library\book-tracker-service\src\main\java\com\example\service\BookTrackerService.java
