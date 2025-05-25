@@ -18,5 +18,11 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+custom:
+  jwt:
+    secret: your_jwt_secret_here
+logging:
+  level:
+    com.example.security: DEBUG
 server:
   port: 8080

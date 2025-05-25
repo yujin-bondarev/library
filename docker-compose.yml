@@ -79,7 +79,7 @@ services:
       SPRING_KAFKA_BOOTSTRAP_SERVERS: kafka:9092
       SERVER_PORT: 8082
       JWT_SECRET: your-very-secret-key
-      GOOGLE_CLIENT_ID: <YOUR_GOOGLE_CLIENT_ID>
-      GOOGLE_CLIENT_SECRET: <YOUR_GOOGLE_CLIENT_SECRET>
+      GOOGLE_CLIENT_ID: 79523384448-cbkn2907hjcbus7l9cujla6bms28rf0s.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET: 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
     ports:
       - "8083:8082"
